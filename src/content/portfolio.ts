@@ -86,7 +86,12 @@ export const person = {
   nameEn: 'Sung Sehyun',
   nameHanja: '成世睍',
   email: 'sehyun2727@gmail.com',
-  github: 'https://github.com/sehyun2727/Digitalsignage-Simulater',
+  githubProfile: 'https://github.com/sehyun2727',
+} as const
+
+export const repos = {
+  simulator: 'https://github.com/sehyun2727/Digitalsignage-Simulater',
+  landingPage: 'https://github.com/sehyun2727/JISA-internship-reflection',
 } as const
 
 export const internship = {
@@ -104,17 +109,17 @@ export const nav = {
     { key: 'simulator', href: '#simulator' },
     { key: 'growth', href: '#growth' },
   ],
-  githubHref: person.github,
+  githubHref: person.githubProfile,
 } as const
 
 export const simulator = {
-  repoUrl: person.github,
+  repoUrl: repos.simulator,
   techLine: 'React · TypeScript · Konva · Zustand · Vitest · Playwright',
 } as const
 
 export const footer = {
   emailHref: `mailto:${person.email}`,
-  githubHref: person.github,
+  githubHref: repos.landingPage,
   hullWebsiteHref: internship.companySite,
   backToTopHref: '#top',
 } as const
