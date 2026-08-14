@@ -1,0 +1,81 @@
+.titleLine {
+  display: block;
+}
+
+.lead {
+  max-width: 66ch;
+  font-size: var(--font-subtitle);
+  line-height: 1.5;
+  margin-top: clamp(24px, 4vw, 40px);
+}
+
+.shifts {
+  margin-top: clamp(48px, 7vw, 80px);
+}
+
+.shiftList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.shiftItem {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px clamp(12px, 2vw, 20px);
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.shiftBefore {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 500;
+  color: var(--color-muted);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-line);
+  text-decoration-thickness: 2px;
+}
+
+.shiftArrow {
+  color: var(--color-green-dark);
+  font-size: 1.1rem;
+}
+
+.shiftAfter {
+  font-size: clamp(1.2rem, 2.6vw, 1.8rem);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(28px, 4vw, 40px);
+  margin-top: clamp(56px, 8vw, 96px);
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.noteTitle {
+  font-size: var(--font-small);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-green-dark);
+}
+
+.noteBody {
+  color: var(--color-muted);
+  line-height: 1.65;
+  max-width: 46ch;
+}
+
+@media (min-width: 780px) {
+  .notes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

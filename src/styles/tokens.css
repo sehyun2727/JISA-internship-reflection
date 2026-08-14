@@ -1,0 +1,45 @@
+:root {
+  /* Sprint 2.1 tonal-flow palette — see Claude.md §5. Additive: existing
+     --color-* names are kept and refreshed, new tones are appended rather
+     than renamed, so older component CSS keeps working unchanged. */
+  --color-paper: #f2f0e8;
+  --color-paper-bright: #faf9f4;
+  --color-paper-sage: #e7eadc;
+  --color-surface: #ffffff;
+  --color-ink: #11130f;
+  --color-ink-soft: #343830;
+  --color-muted: #656b60;
+  --color-line: rgba(17, 19, 15, 0.18);
+  --color-line-strong: rgba(17, 19, 15, 0.42);
+  --color-green: #78972f;
+  --color-green-dark: #4f681e;
+  --color-green-light: #dce5bd;
+  --color-night: #10130e;
+  --color-night-raised: #1a1e17;
+  --color-night-muted: #aab1a4;
+  --color-off-white: #f8f7f0;
+
+  --font-sans:
+    'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  --font-hero: clamp(3.8rem, 10vw, 9.5rem);
+  --font-section: clamp(2.4rem, 6vw, 6rem);
+  --font-subtitle: clamp(1.4rem, 2.4vw, 2.25rem);
+  --font-body: clamp(1rem, 1.2vw, 1.125rem);
+  --font-small: 0.78rem;
+
+  --page-max: 1440px;
+  --content-max: 1320px;
+  --gutter: clamp(20px, 4vw, 64px);
+  --section-y: clamp(72px, 10vw, 152px);
+
+  --header-height: 68px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.2s;
+  --dur-base: 0.5s;
+
+  --radius-sm: 4px;
+  --radius-md: 12px;
+}

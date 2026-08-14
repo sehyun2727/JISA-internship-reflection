@@ -1,0 +1,21 @@
+.bridge {
+  background: var(--color-paper);
+  padding-block: clamp(28px, 4vw, 44px);
+}
+
+.bridge p {
+  max-width: 52ch;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-ink-soft, var(--color-ink));
+}
+
+.bridge::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--color-green);
+  margin-bottom: 16px;
+}

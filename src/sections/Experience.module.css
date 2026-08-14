@@ -1,0 +1,121 @@
+.section {
+  background: var(--color-paper-bright);
+}
+
+.intro {
+  max-width: 62ch;
+  font-size: var(--font-subtitle);
+  line-height: 1.5;
+  margin-top: clamp(24px, 4vw, 40px);
+}
+
+.axes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--color-line);
+  margin-top: clamp(40px, 6vw, 72px);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.axis {
+  position: relative;
+  background: var(--color-paper-bright);
+  padding: clamp(24px, 3.6vw, 36px) 4px;
+}
+
+.axisNum {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-line);
+  margin-bottom: 8px;
+}
+
+.axisCode {
+  font-size: var(--font-small);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-green-dark);
+  margin-bottom: 14px;
+}
+
+.axisTitle {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.axisBody {
+  color: var(--color-muted);
+  max-width: 40ch;
+  line-height: 1.6;
+}
+
+.figureWrap {
+  margin-top: clamp(40px, 6vw, 72px);
+}
+
+.figure {
+  display: grid;
+  gap: 16px;
+}
+
+.figureImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  aspect-ratio: 4 / 3;
+}
+
+.figureCaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--font-small);
+  color: var(--color-muted);
+}
+
+.figureCaption p:first-child {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.figureMeta {
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.strip {
+  margin-top: clamp(32px, 5vw, 56px);
+  padding-top: clamp(20px, 3vw, 28px);
+  border-top: 1px solid var(--color-line);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: var(--font-small);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+@media (min-width: 720px) {
+  .axes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .axis {
+    padding: clamp(24px, 2.6vw, 36px) clamp(20px, 2.4vw, 32px);
+  }
+
+  .figure {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: end;
+  }
+
+  .figureImg {
+    aspect-ratio: 16 / 10;
+  }
+}

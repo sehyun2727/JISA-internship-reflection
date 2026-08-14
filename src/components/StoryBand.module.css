@@ -1,0 +1,31 @@
+.band {
+  background: var(--color-night);
+  min-height: clamp(220px, 26vw, 300px);
+  display: flex;
+  align-items: center;
+  padding-block: clamp(40px, 6vw, 64px);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 0.98;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--color-off-white);
+  margin-bottom: clamp(16px, 3vw, 22px);
+}
+
+.titleLine:last-child {
+  color: var(--color-green);
+}
+
+.body {
+  white-space: pre-line;
+  max-width: 52ch;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-night-muted);
+}

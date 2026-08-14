@@ -1,0 +1,296 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Block A — Sales Observation: dark, matches the outgoing tone of Experience */
+.blockObservation {
+  background: var(--color-night);
+  color: var(--color-night-muted);
+  padding-block: clamp(56px, 8vw, 96px) clamp(40px, 6vw, 64px);
+}
+
+.kicker {
+  display: block;
+  font-size: var(--font-small);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  margin-bottom: 16px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-section);
+  line-height: 1.02;
+  text-transform: uppercase;
+  color: var(--color-paper);
+}
+
+.titleLine {
+  display: block;
+}
+
+.subhead {
+  margin-top: 16px;
+  font-size: 1.05rem;
+  color: var(--color-paper);
+  max-width: 46ch;
+}
+
+.obsBody {
+  max-width: 62ch;
+  margin-top: clamp(24px, 4vw, 36px);
+  line-height: 1.7;
+}
+
+.heroPhoto {
+  margin-top: clamp(28px, 4vw, 40px);
+  max-width: 560px;
+  position: relative;
+}
+
+.heroPhotoFrame {
+  position: relative;
+}
+
+.heroPhotoFrame::before {
+  content: '';
+  position: absolute;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid var(--color-green);
+  border-radius: var(--radius-md);
+  z-index: -1;
+}
+
+.heroPhotoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.heroPhotoLabel {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-paper);
+  background: rgba(16, 19, 14, 0.72);
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.heroPhotoCaption {
+  margin-top: 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: #7c8276;
+}
+
+.rail {
+  margin-top: clamp(32px, 5vw, 48px);
+}
+
+.railList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: #2a3021;
+  border-top: 1px solid #2a3021;
+  border-bottom: 1px solid #2a3021;
+}
+
+.railItem {
+  background: #171b13;
+  padding: 18px clamp(4px, 1.5vw, 12px);
+}
+
+.railLabel {
+  font-size: var(--font-small);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-green);
+  margin-bottom: 8px;
+}
+
+.railBody {
+  font-size: 0.9rem;
+  color: var(--color-paper);
+  line-height: 1.5;
+}
+
+.securityNote {
+  margin-top: 24px;
+  font-size: 0.8rem;
+  color: #7c8276;
+  max-width: 52ch;
+}
+
+/* Block B — compact AI/DX EXPO field notes: transitional mid tone */
+.blockExpo {
+  background: color-mix(in srgb, var(--color-night) 55%, var(--color-paper) 45%);
+  color: var(--color-paper);
+  padding-block: clamp(40px, 6vw, 64px);
+}
+
+.expoLabel {
+  font-size: var(--font-small);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-green);
+  margin-bottom: 12px;
+}
+
+.expoTitle {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  color: var(--color-paper);
+  max-width: 24ch;
+}
+
+.expoBody {
+  margin-top: 14px;
+  max-width: 62ch;
+  color: #dfe2d9;
+  line-height: 1.65;
+}
+
+.mosaic {
+  margin-top: clamp(24px, 4vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mosaicMain,
+.mosaicVert {
+  margin: 0;
+  position: relative;
+}
+
+.mosaicImg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.mosaicMain .mosaicImg {
+  aspect-ratio: 4 / 3;
+}
+
+.mosaicSide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.mosaicVert .mosaicImg {
+  aspect-ratio: 3 / 4;
+}
+
+.mosaicCaption {
+  margin-top: 6px;
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: #b7bcae;
+}
+
+/* Block C — inline problem transition, leads into the light Simulator section */
+.blockTransition {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  padding-block: clamp(48px, 7vw, 80px);
+}
+
+.transitionLabel {
+  font-size: var(--font-small);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-green-dark);
+  margin-bottom: 16px;
+}
+
+.transitionTitleEn {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1.8rem, 4.4vw, 3.2rem);
+  line-height: 1.04;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.transitionLine {
+  display: block;
+}
+
+.transitionTitleLocal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-muted);
+}
+
+.transitionLocalLine {
+  display: block;
+}
+
+.transitionBody {
+  margin-top: clamp(20px, 3vw, 28px);
+  max-width: 62ch;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+@media (min-width: 360px) {
+  .mosaicSide {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 359px) {
+  .mosaicSide {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 720px) {
+  .railList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .railItem {
+    padding: 22px clamp(16px, 2vw, 24px);
+  }
+
+  .mosaic {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .mosaicMain {
+    flex: 1.4;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mosaicMain .mosaicImg {
+    aspect-ratio: auto;
+    flex: 1;
+  }
+
+  .mosaicSide {
+    flex: 1;
+    grid-template-columns: 1fr 1fr;
+  }
+}
